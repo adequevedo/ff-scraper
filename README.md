@@ -14,6 +14,21 @@
 - local json
 
 
+### Mysql table needed for inserts
+```
+CREATE TABLE yearly_stats (
+       owner VARCHAR(255),
+       year INT,
+       team_name VARCHAR(255),
+       wins INT,
+       losses INT,
+       points_for INT,
+       points_against INT,
+       season_finish INT,
+       final_finish INT,
+       primary KEY (owner, year)
+   )
+```
 
 ## Commands
 Install virtual environment  
